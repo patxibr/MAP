@@ -1,0 +1,24 @@
+<ion-content [fullscreen]="true">
+  <div class="backgroundImg">
+    <div class="title">
+      <ion-grid class="grid">
+        <ion-row>
+          <ion-col>
+            <div class="ftitle">DIDAKTIK APP</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col>
+            <div class="subtitle">Paseo por el Puerto Viejo acompañados de Txo</div>
+          </ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col >
+            <unlocker (unlocked)="unlockedHandler($event)"></unlocker>
+
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </div>
+  </div>
+</ion-content>

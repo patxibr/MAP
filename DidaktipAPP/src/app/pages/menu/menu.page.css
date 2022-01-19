@@ -1,0 +1,15 @@
+.grid{
+    background-color:red;
+    position: absolute;
+    top: 0;
+    display: grid;
+    height: 70%;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+.ftitle{
+    color: #2D2624;
+    font-weight: 600;
+    font-size: 2.4em;
+}

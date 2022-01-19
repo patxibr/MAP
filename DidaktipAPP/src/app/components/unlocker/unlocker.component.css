@@ -1,0 +1,31 @@
+input[type="range"] {
+    width: 100%;
+    background: linear-gradient(180deg, #DE4B57 0%, #E47980 48.96%, #D94A53 100%);
+    border-radius: 50px;    
+    -webkit-appearance: none;
+    padding: 5px;
+    transition: opacity 0.5s;
+    position: relative;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    background: url(.././../../assets/icon/icoArrow.png) no-repeat center;
+    background-color: white;
+    background-size: 70%;
+    border-radius: 50px;
+    z-index: 2;
+    width: 45px;
+    position: relative;
+    height: 45px;
+}
+input[type="range"]:before {
+    content: "Empezar";
+    color: #FFFFFF;
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    font-size:0.9em;
+}
+
