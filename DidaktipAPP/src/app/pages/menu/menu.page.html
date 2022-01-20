@@ -5,20 +5,43 @@
         <div class="ftitle">MENU</div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row class="op" (click)="modoGuiado()">
       <ion-col>
-        <div>1 of 3</div>
+        <div class="option option1"><div class="img img1"></div><div class="text">Modo
+          Guiado</div></div>
       </ion-col>
     </ion-row>
-    <ion-row>
+    <ion-row class="op" (click)="modoLibre()">
       <ion-col>
-        <div>1 of 3</div>
+        <div class="option option2"><div class="img img2"></div><div class="text">Modo
+          Libre</div></div>
       </ion-col>
     </ion-row>
-    <ion-row>
-      <ion-col>
-        <div>1 of 3</div>
+    <ion-row class="op" (click)="puntuaciones()">
+      <ion-col >
+        <div class="option option3"><div class="img img3"></div><div class="text">Puntuac
+          iones</div></div>
       </ion-col>
     </ion-row>
   </ion-grid>
+  <footer>
+    <ion-grid class="grid2">
+      <ion-row class="op login">
+        <ion-col>
+          <ion-button class="button">
+            <ion-icon name="people" style="margin-right: 0.5rem;"></ion-icon>        
+              &ensp; Ya tienes cuenta ?
+          </ion-button>
+        </ion-col>
+      </ion-row>
+      <ion-row class="op login">
+        <ion-col>
+          <ion-button class="button">
+            <ion-icon name="accessibility"  style="margin-right: 0.5rem;"></ion-icon>
+            &ensp; Eres nuevo ?
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </footer>
 </ion-content>
