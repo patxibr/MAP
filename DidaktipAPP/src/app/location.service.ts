@@ -5,7 +5,7 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class LocationService {
-  apiUrl = '192.168.73.70:8000/api';
+  apiUrl = 'http://localhost:8000/api';
 
   constructor(public http: HttpClient) {
     console.log('Hello RestServiceProvider Provider');

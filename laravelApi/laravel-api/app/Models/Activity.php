@@ -28,7 +28,10 @@ class Activity extends Model
 	public $timestamps = false;
 
 	protected $fillable = [
-		'coordinates'
+		'latitud'
+	]; 
+	protected $fillable2 = [
+		'longitud'
 	];
 
 	public function activity_completions()
