@@ -29,7 +29,6 @@ class Activity extends Model
 	public $timestamps = false;
 
 	protected $fillable = [
-
 		'longitud', 'latitud', 'banner_path', 'order', 'title', 'description'
 	];
 
