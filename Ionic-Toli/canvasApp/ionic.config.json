@@ -1,0 +1,7 @@
+{
+  "name": "canvasApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

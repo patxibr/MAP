@@ -1,0 +1,35 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar >
+    <ion-title width="auto">
+      Historia Puerto Viejo
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+ 
+<ion-content [forceOverscroll]="false">
+  <canvas #imageCanvas (mousedown)="startDrawing($event)" (touchstart)="startDrawing($event)"
+    (touchmove)="moved($event)" (mousemove)="moved($event)" (mouseup)="endDrawing()" (touchend)="endDrawing()" class="canvas"></canvas>
+
+    <ion-row class="scrolling-wrapper">
+      <ion-grid  >
+        <ion-slides [options]="{slidesPerView: 6.8, freemode: true}"  >
+          <ion-slide (click)="selectColor(color)" *ngFor="let color of colors" [ngClass]="{'hightlight': color === selectedColor}" class="color-block card ion-slide" [style.background]="color" >
+           
+          </ion-slide>
+        </ion-slides>
+      </ion-grid>
+    </ion-row>
+    <ion-range min="2" max="20" color="primary" [(ngModel)]="lineWidth">
+      <ion-icon size="small" slot="start" name="brush"></ion-icon>
+      <ion-icon slot="end" name="brush"></ion-icon>
+    </ion-range>
+
+    <div class="btns_flex">
+      <button expand="full" class="btn_adelante" (click)="exportCanvasImage()">
+        Adelante
+      </button>
+      <button expand="full" class="btn_refresh" (click)="setBackground()">
+        <ion-icon name="refresh-circle" size="large"></ion-icon>
+      </button>
+    </div>
+</ion-content>

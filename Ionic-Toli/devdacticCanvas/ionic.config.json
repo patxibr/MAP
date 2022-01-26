@@ -1,0 +1,7 @@
+{
+  "name": "devdacticCanvas",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

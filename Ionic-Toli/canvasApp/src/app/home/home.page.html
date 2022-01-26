@@ -1,0 +1,11 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title>
+      Ionic Canvas Drawing
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <canvas #imageCanvas (touchstart)="startDrawing($event)" (touchmove)="moved($event)" (touchend)="endDrawing()" (mousedown)="startDrawing($event)" (mouseup)="endDrawing()" (mousemove)="moved($event)"></canvas>
+</ion-content>
