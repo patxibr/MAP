@@ -13,3 +13,5 @@ _**Aplikazioaren garapenerako hurrengo teknologiak erabili izan behar ditugu:**_
 * _LARAVEL PHP FRAMEWORK_
 * _MYSQL WORKBENCH_
 * _FIGMA_
+
+**Oharra:** Bideoaren tamaina dela eta, github-etik kendu izan behar dugu, honek ez duelako izten igotzea.
