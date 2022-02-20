@@ -7,9 +7,8 @@ html, body, #map {
     padding:0px !important;
     margin:0px !important;
 }
-.leaflet-popup {
-    position: relative;
-    text-align: center;
+.test{
+    
 }
 a.leaflet-popup-close-button{
 display: none !important;
@@ -93,5 +92,11 @@ button{
     background-color: rgba(228, 227, 227, 0.9);
     cursor: pointer;
 }
-
+.mainTitle{
+    color: #2D2624 !important;
+    font-size: 1.2em !important;
+    margin-top: -30px !important;
+    font-weight: 800;
+    position: absolute;
+}
 

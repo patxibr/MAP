@@ -19,6 +19,30 @@ const routes: Routes = [
     path: 'mapa',
     loadChildren: () => import('./pages/mapa/mapa.module').then( m => m.MapaPageModule)
   },
+  {
+    path: 'login-form',
+    loadChildren: () => import('./pages/login-form/login-form.module').then( m => m.LoginFormPageModule)
+  },
+  {
+    path: 'mapa-guiado',
+    loadChildren: () => import('./pages/mapa-guiado/mapa-guiado.module').then( m => m.MapaGuiadoPageModule)
+  },
+  {
+    path: 'map-offline',
+    loadChildren: () => import('./pages/map-offline/map-offline.module').then( m => m.MapOfflinePageModule)
+  },
+  {
+    path: 'actividad-overlay',
+    loadChildren: () => import('./pages/actividad-overlay/actividad-overlay.module').then( m => m.ActividadOverlayPageModule)
+  },
+  {
+    path: 'canvas',
+    loadChildren: () => import('./pages/canvas/canvas.module').then( m => m.CanvasPageModule)
+  },
+  {
+    path: 'video',
+    loadChildren: () => import('./pages/video/video.module').then( m => m.VideoPageModule)
+  },
 ];
 
 @NgModule({

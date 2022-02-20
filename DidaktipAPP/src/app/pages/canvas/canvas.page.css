@@ -1,0 +1,46 @@
+.canvas {
+    background-color: white;
+  }
+   
+  .color-block {
+    padding-left: 24px;
+    padding-right: 24px;
+    height: 50px;
+    border-radius: 100%; 
+    margin-left: 5px;
+    border: solid 1px black;
+  }
+  
+  .hightlight {
+    border: solid 3px black;
+    padding-left: 23px;
+    padding-right: 23px;
+  
+  }
+  
+  
+  .ion-slide { 
+    width: unset !important;
+    }
+  
+   .btn_adelante{
+    background: #82747C;
+    border-radius: 30px;
+    color: white;
+    padding: 0.8rem 3.2rem;
+   }
+  
+   .btn_refresh{
+    background: #82747C;
+    border-radius: 30px;
+    color: white;
+    padding: 0.8rem 0.8rem;
+   }
+  
+   .btns_flex{
+     display: flex;
+     width: 100%;
+     flex-direction: row;
+     justify-content: space-around;
+   }
+  

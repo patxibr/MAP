@@ -1,0 +1,182 @@
+.txo{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    background: url(../../../assets/Img/Img_txoLogin.png) no-repeat center;
+    background-size: cover;
+}
+
+.anos{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 80%; 
+}
+
+
+.party{
+    width: 100%;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 100%;
+  
+}
+.party img{
+    width: 100%;
+}
+span{
+    display: block;
+    position: absolute;
+    top: 43.5%;
+    left: 49%;
+    transform: translate(-50%,-50%);
+    font-weight: bold;
+    color: white;
+    font-size: 1.3em;
+}
+.item-inner {
+    border: none !important;
+}
+
+.texto{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 25%;
+    padding: 0 2rem;
+    text-align: center;
+    color: #2D2624;
+}
+h1{
+    font-size: 2em;
+    font-weight: 800;
+    position: relative;
+    display: block;
+    transition: all 0.3s;
+    animation: opacity 0.5s ;
+    opacity: 1;
+}
+@keyframes opacity {
+    from{
+        opacity: 0;
+    }
+}
+h1::after{
+    content: '';
+    background: url(../../../assets/icon/icoPuntos.png) no-repeat center;
+    background-size: contain;
+    width: 80%;
+    height: 2.5rem;
+    top: -40%;
+    left: 10%;
+    position: absolute;
+}
+h5{
+    font-size: 0.7em;
+    font-weight: 500;
+}
+h2{
+    font-size: 1.4em;
+    font-weight: 800;
+}
+h4{
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #8BC9D7;
+}
+button{
+    background: #82747C;
+    border-radius: 30px;
+    color: white;
+    padding: 0.8rem 3.2rem;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+button:disabled{
+    background: #e7d8e1;
+    cursor: not-allowed;
+
+}
+.popUp{
+    position: fixed;
+    top: 0;
+    left:0;
+    background-color: rgba(0, 0, 0,0.6);
+    width: 100%;
+    height: 100%;
+    display: none;
+    z-index: 9999999;
+
+}
+.text{
+    background-color: white;
+    width: 90%;
+    height: 30%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    padding: 1rem;
+}
+.text2{
+    height: 35% !important;
+    text-align: center;
+
+}
+.cardCotainer{
+    display: flex;
+    margin: auto;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 100%;
+}
+.cards{
+    width: 40%;
+    height: 40%;
+    display: inline-block;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+.chico{
+    box-shadow: 4px 0px 4px #8BC9D7, -4px 0px 4px #8BC9D7, 0px 4px 4px #8BC9D7, 0px -4px 4px #8BC9D7 !important}
+.chica{
+    box-shadow: 4px 0px 4px rgba(248, 87, 80, 0.5), -4px 0px 4px rgba(248, 87, 80, 0.5), 0px 4px 4px rgba(248, 87, 80, 0.5), 0px -4px 4px rgba(248, 87, 80, 0.5) !important;
+}
+.containerSelection{
+    top: 5%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 40%;
+    text-align: center;
+    transition: all 0.3s;
+
+}
+.containerSelection img{
+    transition: all 0.3s;
+
+}
+.label{
+    font-weight: 500;
+    font-size: 0.9em;
+}
+ion-range{
+    --bar-height:1rem;
+    --bar-background:#C4C4C4;
+    --bar-border-radius:10px;
+    --pin-background:#D94A53;
+    --pin-color:#D94A53;
+    border: none;
+}
+ion-item{
+    --border:none !important;
+}

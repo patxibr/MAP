@@ -1,0 +1,93 @@
+<section id="section1">
+  <div class="txo"></div>
+  <div class="texto">
+    <h2>Cual es tu nombre ?</h2>
+    <h5>Para continuar adelante necesito saber un poco de ti ya que no me fio de todo el mundo</h5>
+    <button (click)="openPopUp()">Adelante</button>
+  </div>
+  <div class="popUp" id="popUp">
+    <div class="text">
+      <label>Introduce tu nombre para saber como llamarte:</label>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input (ionChange)="inputChange($event)" type="text" (ionFocus)="onFocusPlace($event)" id="nombre"></ion-input>
+      </ion-item>
+      <button (click)="goNextPage()">Adelante</button>
+      <button id="boton3" (click)="goNextPage()">Adelante</button>
+    </div>
+  </div>
+</section>
+<section id="section2">
+  <div class="containerSelection">
+    <h1 id="titulo"></h1>
+    <img src="../../../assets/Img/Img_Kids.png">
+    <h4>Eres una chica o un chico?</h4>
+  </div>
+
+  <div class="cardCotainer">
+    <ion-card class="cards" id="cardChico" (click)="chico()">
+      <ion-card-header>
+        <img src="../../../assets/icon/icoChico.png" />
+      </ion-card-header>
+    </ion-card>
+    <ion-card class="cards" id="cardChica" (click)="chica()">
+      <ion-card-header>
+        <img src="../../../assets/icon/icoChica.png" />
+      </ion-card-header>
+    </ion-card>
+  </div>
+  <div class="texto">
+    <button (click)="goNextPage2()">Adelante</button>
+    <button id="boton2" (click)="goNextPage2()">Adelante</button>
+  </div>
+</section>
+<section id="section3">
+  <div class="popUp" id="popUp2">
+    <div class="text text2">
+      <h2>Enhorabuena</h2>
+      <label style="color: #666666;">
+        Gracias por ayudarme a saber mas de ti ahora me fio un poco mas de ti! Sigue adelante para poder jugar a todos los juegos que tenemos preparados para ti .
+Un saludo!
+      </label>
+     
+      <button  (click)="goNextPage3()">Adelante</button>
+    </div>
+  </div>
+  <div class="anos">
+ 
+    
+    <div class="party">
+      <ion-item style="margin-top: 10%;">
+        <ion-range min="1" max="100" step="1" (ionChange)="rangeChanged($event)" snaps="true" ticks="false" color="secondary"></ion-range>
+      </ion-item>
+      <img src="../../../assets/Img/Img_Party.png"/>
+      <span class=""></span>
+      <span id="urte" class=""></span>
+    </div>
+
+
+
+  </div>
+  <div class="texto texto2">
+    <h2>Cuantos años tienes?</h2>
+    <h5>Para continuar adelante necesito saber un poco de ti ya que no me fio de todo el mundo</h5>
+    <button (click)="openPopUp()">Adelante</button>
+    <button id="boton1" (click)="openPopUp2()">Adelante</button>
+  </div>
+  <div class="popUp" id="popUp">
+    <div class="text">
+      <label>Introduce tu nombre para saber como llamarte:</label>
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input type="text" (ionFocus)="onFocusPlace($event)" id="nombre"></ion-input>
+      </ion-item>
+
+      <button (click)="goNextPage()">Adelante</button>
+
+    </div>
+
+
+
+  </div>
+
+</section>

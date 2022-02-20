@@ -5,30 +5,29 @@
         <div class="ftitle">MENU</div>
       </ion-col>
     </ion-row>
-    <ion-row class="op" (click)="modoGuiado()">
+    <ion-row class="op" id="modoGuiado"  (click)="modoGuiado()">
       <ion-col>
-        <div class="option option1"><div class="img img1"></div><div class="text">Modo
+        <div  class="option option1"><div class="img img1"></div><div class="text">Modo
           Guiado</div></div>
       </ion-col>
     </ion-row>
-    <ion-row class="op" (click)="modoLibre()">
+    <ion-row class="op" id="modoLibre" (click)="modoLibre()">
       <ion-col>
-        <div class="option option2"><div class="img img2"></div><div class="text">Modo
+        <div   class="option option2"><div class="img img2"></div><div class="text">Modo
           Libre</div></div>
       </ion-col>
     </ion-row>
     <ion-row class="op" (click)="puntuaciones()">
       <ion-col >
-        <div class="option option3"><div class="img img3"></div><div class="text">Puntuac
-          iones</div></div>
+        <div class="option option3"><div class="img img3"></div><div class="text">Offline</div></div>
       </ion-col>
     </ion-row>
   </ion-grid>
   <footer>
-    <ion-grid class="grid2">
+    <ion-grid class="grid2" id="logins">
       <ion-row class="op login">
         <ion-col>
-          <ion-button class="button">
+          <ion-button class="button" (click)="goLogin()"> 
             <ion-icon name="people" style="margin-right: 0.5rem;"></ion-icon>        
               &ensp; Ya tienes cuenta ?
           </ion-button>
@@ -36,12 +35,35 @@
       </ion-row>
       <ion-row class="op login">
         <ion-col>
-          <ion-button class="button">
-            <ion-icon name="accessibility"  style="margin-right: 0.5rem;"></ion-icon>
+          <ion-button class="button" (click)="goRegister()">
+            <ion-icon name="accessibility" style="margin-right: 0.5rem;"></ion-icon>
             &ensp; Eres nuevo ?
           </ion-button>
         </ion-col>
       </ion-row>
     </ion-grid>
+    <ion-grid class="grid2" id="logins2">
+      <ion-row class="op login">
+        <ion-col>
+          <ion-button class="button" (click)="cerrarSesion()">
+            <ion-icon name="accessibility" style="margin-right: 0.5rem;"></ion-icon>
+            <span id="bienvenido"></span>
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </footer>
+  <div class="popUp" id="loginPop">
+    <div class="text2">
+      <ion-item>
+        <ion-label position="floating">Nombre</ion-label>
+        <ion-input (ionChange)="inputChangeName($event)" type="text"  id="nombre"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label position="floating">Contraseña</ion-label>
+        <ion-input (ionChange)="inputChangePass($event)" type="password" id="nombre"></ion-input>
+      </ion-item>
+      <button id="boton3" (click)="iniciarSesion()">Adelante</button>
+    </div>
+  </div>
 </ion-content>

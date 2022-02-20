@@ -18,8 +18,7 @@ export class HomePage {
     this.unlocked = event;
     if (event) {
       this.router.navigateByUrl('/menu');
-
-
+      localStorage.clear();
     }
   }
 }

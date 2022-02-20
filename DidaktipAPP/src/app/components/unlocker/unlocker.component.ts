@@ -49,6 +49,7 @@ export class Unlocker {
 
   unlockAction() {
     this.unlocked.emit(true);
+    this.input.nativeElement.value=0
   }
 }
   
